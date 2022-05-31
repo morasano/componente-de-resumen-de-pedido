@@ -1,0 +1,150 @@
+:root{
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+button{
+    border: none;
+    background: none;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 12px 0;
+    margin: 5px 0;
+}
+
+.main-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pale-blue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-conteiner{
+    width: 320px;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.img{
+    background-image: url(./images/illustration-hero.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+}
+
+.info{
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.title{
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-top: 15px;
+}
+
+.paragraph{
+    margin: 20px o;
+    color: var(--desaturated-blue);
+    line-height: 1.6rem;
+}
+
+.pago-conteiner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.pago{
+    text-align: left;
+}
+
+.pago h3{
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.pago span{
+    color: var(--desaturated-blue);
+}
+
+.change{
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.button-primary{
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 1px 10px 8px 1px rgba(0, 0, 0, 0.11);
+    transition: all 250ms ease;
+}
+
+.button-primary:hover{
+    transform: translate(-1px, -1px);
+}
+
+.button-primary:active{
+    transform: translate(1px, 1px);
+}
+
+.button-secondary{
+    color: var(--desaturated-blue);
+    font-weight: 800;
+}
+
+.button-secondary:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 1140px){
+    .main-conteiner{
+
+        background-image: url(./images/pattern-background-desktop.svg);
+        background-position: top;
+        background-size: contain;
+    }
+
+    .card-conteiner{
+        width: 420px;
+        border-radius: 20px;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .info{
+        padding: 15px 40px;
+        text-align: center;
+    }
+}
